@@ -1,0 +1,17 @@
+<Project>
+  <PropertyGroup>   
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>ENCAMINA</Authors>
+    <Company>FERMAX</Company>
+    <Product>FERMAX SmartBot</Product>
+    <Copyright>© 2022</Copyright>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+</Project>

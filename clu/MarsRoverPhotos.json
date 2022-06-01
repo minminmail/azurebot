@@ -1,0 +1,191 @@
+{
+    "api-version": "2021-11-01-preview",
+    "metadata": {
+        "name": "CLUGlobalAI2022",
+        "description": "",
+        "type": "Conversation",
+        "multilingual": false,
+        "language": "es-es",
+        "settings": {
+            "confidenceThreshold": 0
+        }
+    },
+    "assets": {
+        "intents": [
+            {
+                "name": "None"
+            },
+            {
+                "name": "RoverPhoto"
+            }
+        ],
+        "entities": [
+            {
+                "name": "Rovers",
+                "compositionSetting": "RequireExactOverlap",
+                "list": {
+                    "sublists": [
+                        {
+                            "listKey": "RoverNames",
+                            "synonyms": [
+                                {
+                                    "language": "es-es",
+                                    "values": [
+                                        "Curiosity",
+                                        "Opportunity",
+                                        "Spirit"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "prebuiltEntities": null
+            },
+            {
+                "name": "EarthDate",
+                "compositionSetting": "ReturnUnion",
+                "list": null,
+                "prebuiltEntities": [
+                    {
+                        "displayName": "DateTime",
+                        "semanticType": "DateTime",
+                        "semanticSubtype": null
+                    }
+                ]
+            }
+        ],
+        "examples": [
+            {
+                "text": "Opportunity foto de la cámara el día tres de octubre de 2017",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 0,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Pasame una imagen de la Opportunity el pasado 4-05-2008",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 24,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Foto Spirit 12 julio 2008",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 5,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Curiosity imagen 14 agosto 2020",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 0,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "De la Spirit quiero ver una imágen del día primero de junio de 2005",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 6,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Foto de la sonda Opportunity el día dos de diciembre de 2016",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 17,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Obtener foto del Spirit el 5-02-2008",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 17,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Del día 12-05-2015, ver foto del Curiosity",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 33,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Muestrame una fotografía del rover Opportunity del 25/06/2011",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 35,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Quiero ver una foto de la sonda Spirit del día 24 de Marzo de 2005",
+                "language": "es-es",
+                "intent": "RoverPhoto",
+                "entities": [
+                    {
+                        "entityName": "Rovers",
+                        "offset": 32,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            }
+        ]
+    }
+}
